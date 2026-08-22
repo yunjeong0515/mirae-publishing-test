@@ -1,0 +1,197 @@
+@charset "UTF-8";
+/* Pretendard */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+/* NanumSquare */
+@import url("https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css");
+
+/* NanumSquareRound */
+@font-face {
+  font-family: "NanumSquareRound";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff")
+    format("woff");
+  font-weight: normal;
+  font-display: swap;
+}
+
+/* GmarketSans */
+@font-face {
+  font-family: "GMarketSans";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff")
+    format("woff");
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GMarketSans";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
+    format("woff");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GMarketSans";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff")
+    format("woff");
+  font-weight: 700;
+  font-display: swap;
+}
+
+/* Jalnan */
+@font-face {
+  font-family: "YeogiOttaeJalnan";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff")
+    format("woff");
+  font-weight: normal;
+  font-display: swap;
+}
+
+html,
+body {
+  font-family: "Pretendard", sans-serif;
+  font-size: 100%;
+  color: inherit;
+  line-height: 1.4;
+  word-break: keep-all;
+  word-wrap: break-word;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-300 {
+  font-weight: 300;
+}
+.font-400 {
+  font-weight: 400;
+}
+.font-500 {
+  font-weight: 500;
+}
+.font-600 {
+  font-weight: 600;
+}
+.font-700 {
+  font-weight: 700;
+}
+.font-800 {
+  font-weight: 800;
+}
+
+.font-gmarket {
+  font-family: "GMarketSans", sans-serif;
+}
+.font-jalnan {
+  font-family: "YeogiOttaeJalnan", sans-serif;
+}
+.font-nanum-extrablod {
+  font-family: "NanumSquareExtraBold";
+}
+.font-nanumround {
+  font-family: "NanumSquareRound";
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+img {
+  display: block;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+address,
+em {
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+th {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+input,
+button,
+select {
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  border: 0;
+}
+
+table caption {
+  display: none;
+}
+
+fieldset {
+  border: 0;
+}
+
+legend {
+  display: none;
+}
+
+:root {
+  --mainblue: #001a57;
+  --mainbrown: #8e7978;
+  --brown01: #5a371e;
+  --brown02: #331d0a;
+  --pink03: #ff8296;
+  --bggray: #353b43;
+  --black: #000000;
+  --white: #ffffff;
+}
