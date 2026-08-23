@@ -134,6 +134,19 @@
   width: 100%;
   object-fit: contain;
 }
+.floating-menu .nav-wrap .top-btn:hover .top-font {
+  animation: topMove 0.7s ease-in-out infinite;
+}
+@keyframes topMove {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
+}
 .floating-menu .nav-wrap .nav-list li button {
   display: flex;
   align-items: center;
@@ -158,6 +171,12 @@
 }
 .floating-menu .nav-wrap .nav-list li button .icon {
   height: 20px;
+}
+.floating-menu .nav-wrap .nav-list li button .icon.fire-icon {
+  width: 15px;
+}
+.floating-menu .nav-wrap .nav-list li button .icon.gift-icon {
+  width: 19px;
 }
 .floating-menu .nav-wrap .nav-list li button .icon img {
   width: 100%;
@@ -452,18 +471,34 @@
   .floating-menu {
     width: 120px;
   }
-  .floating-menu .nav-wrap .nav-list li button {
-  }
   .floating-menu .nav-wrap .nav-list li button span {
     font-size: 13px;
   }
   .floating-menu .nav-wrap .nav-list li button span .m-br {
     display : block;
   }
+  .floating-menu .nav-wrap .nav-list li button .icon {
+    height: 16px;
+  }
+  .floating-menu .nav-wrap .nav-list li button .icon.fire-icon {
+    width: 12px;
+  }
+  .floating-menu .nav-wrap .nav-list li button .icon.gift-icon {
+    width: 15px;
+  }
   .floating-menu .nav-wrap .top-btn .top-font {
     width: 30%;
   }
+  @keyframes topMove {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
 
+    50% {
+      transform: translateY(-2px);
+    }
+  }
   .bottom-apply-btn {
     width: auto;
     border-radius: 10px 10px 0 0;
