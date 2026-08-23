@@ -40,7 +40,7 @@ const subjectSwiper = new Swiper('.subject-swiper', {
     disableOnInteraction: false,
   },
 
-  speed: 500,
+  speed: 300,
 
   navigation: {
     prevEl: ".swiper-prev",
@@ -48,6 +48,16 @@ const subjectSwiper = new Swiper('.subject-swiper', {
   },
 
   on: {
+    init: function () {
+      const randomIndex = Math.floor(Math.random() * subjectTabs.length);
+
+      this.slideToLoop(randomIndex, 0);
+
+      subjectTabs.forEach((tab, i) => {
+        tab.classList.toggle('active', i === randomIndex);
+      });
+    },
+
     slideChange: function () {
       const index = this.realIndex;
 
@@ -58,7 +68,6 @@ const subjectSwiper = new Swiper('.subject-swiper', {
   },
 });
 
-// 탭 클릭
 subjectTabs.forEach((tab) => {
   tab.addEventListener('click', () => {
     const index = Number(tab.dataset.index);
